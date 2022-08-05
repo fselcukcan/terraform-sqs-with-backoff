@@ -9,7 +9,7 @@ resource "aws_sqs_queue" "sqs" {
 }
 
 resource "aws_sqs_queue" "sqs_dead_letter" {
-    name = "awsome_new_co-${var.env}-${var.queue_name}-dead-letter"
+    name = "awesome_new_co-${var.env}-${var.queue_name}-dead-letter"
     delay_seconds = 0
     max_message_size = 262144
     message_retention_seconds = 1209600 # 14 days.
